@@ -10,7 +10,6 @@ Vcs-Git: https://github.com/bk/ikiwiki-plugin-mathjax
 Standards-Version: 3.9.5
 
 Package: libikiwiki-plugin-mathjax-perl
-Priority: optional
 Architecture: all
 Depends:
  ikiwiki,
