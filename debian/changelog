@@ -1,11 +1,16 @@
-ikiwiki-plugin-mathjax (0-1~1.gbpd546ee) UNRELEASED; urgency=medium
+ikiwiki-plugin-mathjax (0-1~2.gbpef9485) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @d546ee98125233f198aefd1d4739e82f1306b3e8 **
+  ** SNAPSHOT build @ef94851250584ce1b9f9c0e6e55359d3aa8772eb **
 
   * Initial release. (Closes: #XXXXXX)
-  * debian/control: Add a newer build-dep on libmodule-build-perl.
-  * debian/control: Add build-dep on ikiwiki.
-  * debian/control: Update standards-version to 3.9.5.
-  * debian/control: Version the build-dep on libmodule-build-perl.
+  * debian: Add preliminary (non-working) debian packaging.
+  * debian/control:
+    + Update standards-version to 3.9.5.
+    + Normalize with wrap-and-sort.
+    + Fix build-dependencies.
+  * debian/{control,changelog}:
+    + Fix name of the source package.
+  * debian/copyright:
+    + Fix my copyright years.
 
  -- Rogério Brito <rbrito@ime.usp.br>  Fri, 07 Sep 2012 23:11:01 -0300
