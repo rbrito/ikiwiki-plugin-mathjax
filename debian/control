@@ -1,4 +1,4 @@
-Source: libikiwiki-plugin-mathjax-perl
+Source: ikiwiki-plugin-mathjax
 Priority: optional
 Section: perl
 Maintainer: Rogério Brito <rbrito@ime.usp.br>
