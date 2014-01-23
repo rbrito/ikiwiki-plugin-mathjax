@@ -16,7 +16,6 @@ Depends:
  ikiwiki,
  libhighlight-perl,
  libtext-multimarkdown-perl,
- perl (>= 5.18) | libmodule-build-perl,
  ${misc:Depends},
  ${perl:Depends}
 Description: plugin for ikiwiki to allow Math formatted with MathJax
