@@ -1,0 +1,29 @@
+Source: libikiwiki-plugin-mathjax-perl
+Priority: optional
+Section: perl
+Maintainer: Rogério Brito <rbrito@ime.usp.br>
+Build-Depends: ikiwiki, perl (>= 5.18) | libmodule-build-perl, libhighlight-perl, libtext-multimarkdown-perl, ikiwiki
+Homepage: https://github.com/bk/ikiwiki-plugin-mathjax
+Vcs-Browser: https://github.com/bk/ikiwiki-plugin-mathjax
+Vcs-Git: https://github.com/bk/ikiwiki-plugin-mathjax
+Standards-Version: 3.9.5
+
+Package: libikiwiki-plugin-mathjax-perl
+Priority: optional
+Architecture: all
+Depends: ${misc:Depends}, ikiwiki, libhighlight-perl, libtext-multimarkdown-perl, ikiwiki, perl (>= 5.18) | libmodule-build-perl
+Description: plugin for ikiwiki to allow Math formatted with MathJax
+ This plugin makes it easy to use MathJax in IkiWiki. Features:
+ .
+ * No changes to page.tmpl are needed -- the MathJax Javascript is only
+ loaded on pages where it is needed.
+ .
+ * Both display ($$...$$ or \[...\]) and inline ($...$ or \(...\)) math are
+ supported. Just take care that inline math must stay on one line in your
+ markdown source. A single literal dollar sign in a line does not need to be
+ escaped, but two do.
+ .
+ If you want to change the MathJax configuration, you currently must edit the
+ source of the module. I may later add configuration hooks so that one may
+ control its behaviour through the setup file for the wiki. Let me know if
+ you need this.
