@@ -22,13 +22,13 @@ Depends:
 Description: plugin for ikiwiki to allow Math formatted with MathJax
  This plugin makes it easy to use MathJax in IkiWiki. Features:
  .
- * No changes to page.tmpl are needed -- the MathJax Javascript is only
- loaded on pages where it is needed.
+  * No changes to page.tmpl are needed -- the MathJax Javascript is only
+    loaded on pages where it is needed.
  .
- * Both display ($$...$$ or \[...\]) and inline ($...$ or \(...\)) math are
- supported. Just take care that inline math must stay on one line in your
- markdown source. A single literal dollar sign in a line does not need to be
- escaped, but two do.
+  * Both display ($$...$$ or \[...\]) and inline ($...$ or \(...\)) math are
+    supported. Just take care that inline math must stay on one line in your
+    markdown source. A single literal dollar sign in a line does not need to
+    be escaped, but two do.
  .
  If you want to change the MathJax configuration, you currently must edit the
  source of the module. I may later add configuration hooks so that one may
