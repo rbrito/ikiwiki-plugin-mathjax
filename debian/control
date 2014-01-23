@@ -19,9 +19,9 @@ Depends:
  ${misc:Depends},
  ${perl:Depends}
 Description: plugin for ikiwiki to allow Math formatted with MathJax
- This plugin makes it easy to use MathJax in IkiWiki. Features:
+ This plugin makes it easy to use MathJax in IkiWiki. Some features:
  .
-  * No changes to page.tmpl are needed -- the MathJax Javascript is only
+  * No changes to page.tmpl are needed -- the MathJax JavaScript is only
     loaded on pages where it is needed.
  .
   * Both display ($$...$$ or \[...\]) and inline ($...$ or \(...\)) math are
@@ -29,7 +29,5 @@ Description: plugin for ikiwiki to allow Math formatted with MathJax
     markdown source. A single literal dollar sign in a line does not need to
     be escaped, but two do.
  .
- If you want to change the MathJax configuration, you currently must edit the
- source of the module. I may later add configuration hooks so that one may
- control its behaviour through the setup file for the wiki. Let me know if
- you need this.
+ The MathJax configuration is currently not adjustable without editing the
+ source of the module.
