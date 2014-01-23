@@ -1,6 +1,4 @@
-ikiwiki-plugin-mathjax (0-1~2.gbpef9485) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @ef94851250584ce1b9f9c0e6e55359d3aa8772eb **
+ikiwiki-plugin-mathjax (0-1) UNRELEASED; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
   * debian: Add preliminary (non-working) debian packaging.
@@ -12,5 +10,9 @@ ikiwiki-plugin-mathjax (0-1~2.gbpef9485) UNRELEASED; urgency=medium
     + Fix name of the source package.
   * debian/copyright:
     + Fix my copyright years.
+  * debian/control:
+    + Add improvements given by cme.
+    + Reduce dependencies given by cme.
+    + Improve the package's long description.
 
- -- Rogério Brito <rbrito@ime.usp.br>  Fri, 07 Sep 2012 23:11:01 -0300
+ -- Rogério Brito <rbrito@ime.usp.br>  Thu, 23 Jan 2014 01:20:49 -0200
