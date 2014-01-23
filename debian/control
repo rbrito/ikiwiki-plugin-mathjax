@@ -2,7 +2,11 @@ Source: ikiwiki-plugin-mathjax
 Priority: optional
 Section: perl
 Maintainer: Rogério Brito <rbrito@ime.usp.br>
-Build-Depends: ikiwiki, perl (>= 5.18) | libmodule-build-perl, libhighlight-perl, libtext-multimarkdown-perl, ikiwiki
+Build-Depends:
+ ikiwiki,
+ libhighlight-perl,
+ libtext-multimarkdown-perl,
+ perl (>= 5.18) | libmodule-build-perl
 Homepage: https://github.com/bk/ikiwiki-plugin-mathjax
 Vcs-Browser: https://github.com/bk/ikiwiki-plugin-mathjax
 Vcs-Git: https://github.com/bk/ikiwiki-plugin-mathjax
@@ -11,7 +15,13 @@ Standards-Version: 3.9.5
 Package: libikiwiki-plugin-mathjax-perl
 Priority: optional
 Architecture: all
-Depends: ${misc:Depends}, ikiwiki, libhighlight-perl, libtext-multimarkdown-perl, ikiwiki, perl (>= 5.18) | libmodule-build-perl
+Depends:
+ ikiwiki,
+ libhighlight-perl,
+ libtext-multimarkdown-perl,
+ perl (>= 5.18) | libmodule-build-perl,
+ ${misc:Depends},
+ ${perl:Depends}
 Description: plugin for ikiwiki to allow Math formatted with MathJax
  This plugin makes it easy to use MathJax in IkiWiki. Features:
  .
