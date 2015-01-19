@@ -26,7 +26,7 @@ sub format {
     $content =~ s{\!\!mathjaxbegin-i!! (.*?)\s\!\!mathjaxend-i\!\!}{'\('.decode_base64($1).'\)'}ges; #{
     $content =~ s{\!\!mathjaxbegin-d!! (.*?)\s\!\!mathjaxend-d\!\!}{'\['.decode_base64($1).'\]'}ges; #{
     my $scripttag = _scripttag();
-    $content =~ s{(</head>)}{$scripttag\n$1}i; #}{
+    $content =~ s{(</body>)}{$scripttag\n$1}i; #}{
     return $content;
 }
 
@@ -62,35 +62,10 @@ sub _scripttag {
     return '<script type="text/x-mathjax-config">'
       . 'MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });'
       . '</script>'
-      . '<script type="text/javascript" '
+      . '<script async="async" type="text/javascript" '
       . 'src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config='
       . $config
       . '"></script>';
-}
-
-sub _scriptblock {
-    return qq%
-<script type="text/javascript">//<![CDATA[
-(function () {
-  if (window.MathJax && MathJax.Hub) return;
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src  = "http://cdn.mathjax.org/mathjax/latest/MathJax.js";
-
-  var config = 'MathJax.Hub.Config({' +
-                 'extensions: ["tex2jax.js"],' +
-                 'jax: ["input/TeX","output/HTML-CSS"],' +
-                 'TeX: { equationNumbers: { autoNumber: "AMS" } }' +
-               '});' +
-               'MathJax.Hub.Startup.onload();';
-
-  if (window.opera) {script.innerHTML = config}
-               else {script.text = config}
-
-  document.getElementsByTagName("head")[0].appendChild(script);
-})();
-//]]></script>
-%;
 }
 
 1;
