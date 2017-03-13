@@ -1,3 +1,14 @@
+ikiwiki-plugin-mathjax (0-2~1.gbp91a5d1) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @91a5d145c92c6477704d2a59afaf153ad623c95a **
+
+  * debian/control:
+    + Fix lintian's binary-control-field-duplicates-source.
+    + Fix lintian's perl-module-name-not-mentioned-in-description.
+    + Update standards version to 3.9.8. No further changes.
+
+ -- Rogério Brito <rbrito@ime.usp.br>  Mon, 13 Mar 2017 19:34:03 -0300
+
 ikiwiki-plugin-mathjax (0-1) UNRELEASED; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
