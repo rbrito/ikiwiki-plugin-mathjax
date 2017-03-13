@@ -7,7 +7,7 @@ Build-Depends:
 Homepage: https://github.com/bk/ikiwiki-plugin-mathjax
 Vcs-Browser: https://github.com/bk/ikiwiki-plugin-mathjax
 Vcs-Git: https://github.com/bk/ikiwiki-plugin-mathjax
-Standards-Version: 3.9.5
+Standards-Version: 3.9.8
 
 Package: libikiwiki-plugin-mathjax-perl
 Architecture: all
